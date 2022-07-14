@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+    box-sizing: border-box;
+}
+
+/*Cabecalho*/
+header{
+    width: 100%;
+    height: 10vh;
+    background-color:#3E2A17;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;   
+}
+
+.titulo{
+    font-size: 2em;
+    color:#E8BD6F;
+    margin: auto;
+}
+
+/*Navegador*/
+
+nav{
+    width: 100%;
+    height: 8vh;
+    background-color: #E8BD6F;
+    box-shadow: -1px 7px 5px rgba(50, 50, 50, 0.77);
+    position: fixed;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 5vw;
+}
+
+ul li{
+    display: flex;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #3E2A17;
+    font-size: 1.5em;
+}
+
+/*Section2*/
+
+.titulo-secundario1{
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
+    text-align: center;
+    font-size: 2em;
+}
+
+.paragrafo1{
+    text-align: center;
+
+}
+
+/*Menu principal*/
+
+body{
+    background-color: #fbe5bb;
+}
+
+main{
+    margin-right: 3vw;
+    margin-left: 3vw;
+    padding-top: 25vh;
+}
+
+#imagem{
+    width: 10em;
+    height: 10em;
+    margin-top: 2vw;
+}
+
+.titulo-menu{
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
+    text-align: center;
+    font-size: 2em;
+}
+
+#menu-principal{
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+}
+
+.text{
+    margin-top: 2vw;
+}
+
+.text p {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/*Rodape*/
+
+footer{
+    margin-left: 3vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Media*/
+
+@media only screen and (max-width: 760px){
+
+   header{
+    height: 15vh;
+    position: fixed;
+   }
+
+   nav{
+    height: 30vh;
+    margin-top: 15vh;
+   }
+
+   nav ul{
+    flex-direction: column;
+    align-items: center;
+   }
+
+   a{
+    font-size: 1em;
+   }
+
+   main{
+    padding-top: 65vh;
+   }
+
+   body{
+    margin-left: 1vw;
+    margin-right: 1vw;
+   }
+
+   #section2{
+    display: flex;
+    justify-content: center;
+    width: 140vw;
+   }
+
+   .titulo-menu{
+    align-items: center;
+    width: 150vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+   }
+
+   #menu-principal{
+    flex-direction: column;
+    align-items: center;
+    width: 150vw;
+   }
+
+   #titulo-cafe{
+    text-align: center;
+   }
+
+   .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+   }
+
+   .rodape{
+    flex-direction: column;
+    width: 150vw;
+   }
+
+}
